@@ -1,4 +1,5 @@
 # Vagrant AI chat
+[Serge](https://github.com/serge-chat/serge) AI chat provided with Vagrant
 
 ## Installation
 - Install [Vagrant](https://developer.hashicorp.com/vagrant/install?product_intent=vagrant)
