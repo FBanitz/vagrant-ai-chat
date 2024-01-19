@@ -26,7 +26,7 @@ Vagrant.configure("2") do |ia_chat|
   end
 
   ia_chat.vm.provision :shell do |shell|
-    shell.inline = "sleep 5"
+    shell.inline = "sleep 15"
   end
 
   ia_chat.vm.provision :shell do |shell|
