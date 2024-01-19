@@ -26,7 +26,7 @@ Vagrant.configure("2") do |ia_chat|
   end
 
   ia_chat.vm.provision :shell do |shell|
-    shell.inline = "sleep 15"
+    shell.inline = "echo 'Waiting to the webserver to start...' && sleep 15"
   end
 
   ia_chat.vm.provision :shell do |shell|
