@@ -15,7 +15,7 @@ Vagrant.configure("2") do |ia_chat|
   # boxes at https://vagrantcloud.com/search.
   ia_chat.vm.box = "bento/debian-12.1"
   ia_chat.vm.network "private_network", ip: "10.0.0.10"
-  ia_chat.vm.network "forwarded_port", guest: 8009, host: 8008
+  ia_chat.vm.network "forwarded_port", guest: 8008, host: 8008
 
   ia_chat.vm.provision :shell do |shell|
     shell.path = "scripts/install-podman.sh"
@@ -24,7 +24,7 @@ Vagrant.configure("2") do |ia_chat|
   ia_chat.vm.provision :shell do |shell|
     shell.path = "scripts/install-serge.sh"
   end
-  
+
   ia_chat.vm.provision :shell do |shell|
     shell.path = "scripts/configure-model.sh"
     shell.args = $model
