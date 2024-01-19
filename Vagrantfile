@@ -26,6 +26,10 @@ Vagrant.configure("2") do |ia_chat|
   end
 
   ia_chat.vm.provision :shell do |shell|
+    shell.inline = "sleep 5"
+  end
+
+  ia_chat.vm.provision :shell do |shell|
     shell.path = "scripts/configure-model.sh"
     shell.args = $model
   end
