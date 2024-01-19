@@ -1,0 +1,1 @@
+curl -X POST -H "Content-Type: application/json" localhost:8008/api/model/$1/download
